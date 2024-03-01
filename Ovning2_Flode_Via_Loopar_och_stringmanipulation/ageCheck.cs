@@ -63,7 +63,11 @@ namespace Ovning2_Flode_Via_Loopar_och_stringmanipulation
                 {
                     list.Add(age);
                 }
-                else { Console.WriteLine("Fel inmatning här tar vi bara siffror!"); }
+                else { 
+                    Console.WriteLine("Fel inmatning här tar vi bara siffror!"); 
+                    return -1;
+                    
+                }
                 
             }
             
@@ -75,8 +79,6 @@ namespace Ovning2_Flode_Via_Loopar_och_stringmanipulation
 
             // skickar tillbaka gruppens kostnad
             return sum;
-            
-
         }
     }
 }
