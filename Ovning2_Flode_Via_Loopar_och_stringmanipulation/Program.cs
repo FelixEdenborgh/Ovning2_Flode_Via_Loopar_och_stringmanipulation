@@ -15,6 +15,7 @@
             string howmany = string.Empty;
             string companyages = string.Empty;
             string repeat = string.Empty;
+            string words = string.Empty;
 
 
 
@@ -27,6 +28,7 @@
                 Console.WriteLine("1. Age check");
                 Console.WriteLine("2. Pris för sälskap 2 personer+");
                 Console.WriteLine("3. Repetera en sträng 10 gånger");
+                Console.WriteLine("4. Ta ut det tredje ordet");
                 Console.Write(": ");
 
 
@@ -79,6 +81,11 @@
                             repeat = Console.ReadLine();
                             Util.Repeat(repeat);
                             break;
+                        case 4:
+                            Console.WriteLine("Skriv mist 3 ord utan mellan slag: ");
+                            words = Console.ReadLine();
+                            Console.WriteLine($"Det tredje ordet är: {Util.Cut(words)}");
+                            break;
 
                         default:
                             Console.WriteLine("Felaktig input");
@@ -90,8 +97,6 @@
                     Console.WriteLine("Voops det där var en text string och inte en siffra. Försök igen!");
                 }
             }
-
-            // mental note, vi är på sista sidan i uppgiften "meny val 2"
         }
     }
 }

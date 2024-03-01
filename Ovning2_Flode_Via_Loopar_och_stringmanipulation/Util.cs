@@ -25,5 +25,15 @@ namespace Ovning2_Flode_Via_Loopar_och_stringmanipulation
                 
             }
         }
+
+        public static string Cut(string words)
+        {
+            // delar orden på mellan slag och lägger in dem i en array.
+            string[] splittedWords = words.Split(' ');
+
+            string thirdWord = splittedWords[2];
+            return thirdWord;
+
+        }
     }
 }
