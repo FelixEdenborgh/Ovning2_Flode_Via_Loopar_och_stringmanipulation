@@ -48,7 +48,7 @@
                             // omvandlar strängen till int om det går annars går till else och skriver "fel input testa igen"
                             if (int.TryParse(ageOfUser, out int age))
                             {
-                                Console.WriteLine($"Du är av åldern {age} och ditt biljet pris är {ageCheck.CheckAge(age)}");
+                                Console.WriteLine($"Du är av åldern {age} och ditt biljet pris är {ageCheck.CheckAge(age)}kr");
                                 
                             }
                             else { Console.WriteLine("Fel input testa igen!"); }
@@ -65,6 +65,8 @@
                             }
                             else { Console.WriteLine("Fel input testa igen!"); }
                             break;
+                        case 3:
+                            break;
 
                         default:
                             Console.WriteLine("Felaktig input");
@@ -77,7 +79,7 @@
                 }
             }
 
-            
+            // mental note, vi är på sista sidan i uppgiften "meny val 2"
         }
     }
 }
