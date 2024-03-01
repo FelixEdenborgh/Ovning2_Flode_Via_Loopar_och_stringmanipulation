@@ -82,18 +82,22 @@
                             Util.Repeat(repeat);
                             break;
                         case 4:
+                            // Kollar vilka 3 ord användaren matar in
                             Console.WriteLine("Skriv mist 3 ord utan mellan slag: ");
                             words = Console.ReadLine();
+                            // skriver ut det tredje ordet
                             Console.WriteLine($"Det tredje ordet är: {Util.Cut(words)}");
                             break;
 
                         default:
+                            // Om inget är rätt så får man tillbaka Felaktig input och den hoppar ur switchen så att man kan få välja igen
                             Console.WriteLine("Felaktig input");
                             break;
                     }
                 }
                 else
                 {
+                    // är det ingen siffra man matar in så får man feedback och får försöka igen
                     Console.WriteLine("Voops det där var en text string och inte en siffra. Försök igen!");
                 }
             }

@@ -14,6 +14,7 @@ namespace Ovning2_Flode_Via_Loopar_och_stringmanipulation
             // skriver sedan ut den 10 gånger på rad och inte med rad brytning
             for(int i = 1; i <= 10; i++)
             {
+                // Kollar så att den sita utskriften inte har ett komma teken i sig genom att skriva de 9 första med comma på slutet och sista utan.
                 if(i < 10)
                 {
                     Console.Write($"{i}.{userChoice}, ");
@@ -31,6 +32,7 @@ namespace Ovning2_Flode_Via_Loopar_och_stringmanipulation
             // delar orden på mellan slag och lägger in dem i en array.
             string[] splittedWords = words.Split(' ');
 
+            // sparar det tredje i en variable och skickar tillbaka den i return
             string thirdWord = splittedWords[2];
             return thirdWord;
 
